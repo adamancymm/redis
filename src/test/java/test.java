@@ -9,6 +9,7 @@ public class test {
         jedis.set("1","100");
         jedis.sadd("name","lucy","jack");
         //修改版本号
+        //fox-fix
         jedis.close();
 
 
