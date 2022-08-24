@@ -1,0 +1,15 @@
+import org.junit.Test;
+import redis.clients.jedis.Jedis;
+
+public class test {
+    @Test
+    public void demo(){
+        Jedis jedis=new Jedis("localhost",6379);
+        System.out.println(jedis.ping());
+        jedis.set("1","100");
+        jedis.sadd("name","lucy","jack");
+        jedis.close();
+
+
+    }
+}
