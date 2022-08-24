@@ -10,6 +10,7 @@ public class test {
         jedis.sadd("name","lucy","jack");
         //修改版本号
         //fox-fix
+        //对方是否
         jedis.close();
 
 
